@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/alert.css' %}">
+<center><h1> Camera System </h1></center>
+<center id="divID"><img src="{% static 'images/pic.jpg' %}" width="900" height="600"></center>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  	var counter = 1;
+	var auto_refresh = setInterval(
+	function () {
+    var newcontent= 'Refresh nr:'+counter;
+    $('#divID').html(newcontent);
+    	counter++;
+	}, 1000);	
+  </script>
+{% endblock %}

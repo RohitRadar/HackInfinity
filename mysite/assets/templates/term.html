@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/terminal.css' %}">
+<h3 style="text-align: center;">Crop Sense Devices</h3>
+<div class="full">
+<div class="half">
+    <p>Humidity</p>
+    <img class="graph" src="{% static 'images/hum.jpg' %}">
+</div>
+<div class="half2">
+    <p>Temperature</p>
+    <img class="graph"  src="{% static 'images/temp.jpg' %}">
+</div>
+</div>
+{% endblock %}

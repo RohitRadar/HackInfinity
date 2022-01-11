@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/alert.css' %}">
+<div class="alerts">
+	<div class="half">
+		<p class="head">Device</p>
+		<p class="list">Temperature</p>
+		<p class="list">Humidity</p>
+		<p class="list">Illumination</p>
+		<p class="list">Fans</p>
+		<p class="list">Ultrasonic</p>
+	</div>
+	<div class="half2">
+		<p class="head">Status</p>
+		<p class="list">Online</p>
+		<p class="list">Online</p>
+		<p class="list">Online</p>
+		<p class="list">Online</p>
+		<p class="list">Online</p>
+	</div>
+	<div class="half3">
+		<p class="head">Alerts</p>
+		<p class="list">{{temp}}</p>
+		<p class="list">{{hum}}</p>
+		<p class="list">{{light}}</p>
+		<p class="list">{{fan}}</p>
+		<p class="list">{{ultra}}</p>
+	</div>
+</div>
+{% endblock %}

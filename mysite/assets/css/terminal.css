@@ -1,0 +1,30 @@
+.half{
+    width:50%;
+    float:left;
+}
+.half2{
+    float:left;
+    width:50%;
+}
+.graph{
+    width:80%;
+}
+.full{
+    margin-left:15%;
+    width:80%;
+}
+@media(max-width:743px){
+    .half{
+        width: 100%;
+    }
+    .half2{
+        width:100%;
+    }
+    body{
+        margin-top:-20px;
+        font-size:15px;
+    }
+    .navbar{
+        margin-top:0px;
+    }
+}
